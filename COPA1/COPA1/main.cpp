@@ -22,9 +22,15 @@ using namespace std;
 int main(int argc, const char * argv[])
 {
 
-    //--- Lexer (primitiv)
-    string input = "foo = 8 foo-2*5+foo";
+    //string input = "foo = 8 foo-2*5+foo"; //teststring
     
+    //testinput-code
+    char input[100];
+    cout << "type your code" << endl;
+    
+    cin.getline(input, 100);
+    
+    //--- Lexer (primitiv)
     Lexer lexer;
     cout << "LexerTestOutputs:" << endl;
     vector<Token> tokenarray = lexer.stateMachine(input);
