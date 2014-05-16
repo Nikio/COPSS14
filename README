@@ -1,0 +1,10 @@
+COPA1
+Lexer+Parser in Projectformat, 
+- lexer can produce 3 tokens: 'n'(number), 'o'(operation) and 'c' (character, goes equally for strings)
+- interpreter can parse basic math-operations (+,-,*,/) and declaration (e.g. foo=2)
+currently get's the input from a string
+
+TODO: 
+- writing a reader for a textfile
+- cleaning up, the code is still messy (especially the parser functions)
+(- adding functionalitys)
